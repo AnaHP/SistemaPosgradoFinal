@@ -6,7 +6,13 @@ class Admin extends Controller{
     }
 
     public function index(){
+      $this->view->usuario = $this->getUsuario('256910');
       $this->view->render($this,'index');
+    }
+
+    public function getUsuario($expediente){
+      $usuario = $this->model->getUsuario($expediente);
+      return $usuario;
     }
 
     private function alumnos()

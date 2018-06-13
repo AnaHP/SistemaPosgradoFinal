@@ -25,25 +25,6 @@ function login(){
           });//Fin ajax
       }
 
-      
-//Muestra el nombre del documento
-function subirDoc(){
-  var formData = new FormData();
-  formData.append("archivo", document.querySelector('#archivo').files[0]);
-  var request = new XMLHttpRequest();
-  request.open("POST", "archivo()");
-  request.send(formData);
-  request.onreadystatechange = function () {
-      if (this.readyState == 4 && this.status == 200) {
-          console.log(this.responseText);
-          if (this.responseText == '1') {
-              alert('Se subio correctamente');
-          } else {
-              alert('Ocurrio un error');
-          }
-      }
-  }
-}
 
       
 

@@ -21,18 +21,18 @@
         </div>
           <div class="datosMo col-xs-12 col-sm-12 col-md-12 col-lg-12" style="border:none;">
             <h1 id="nombreArchivo">Subir Archivo</h1><!--Nombre del archivo que se ha seleccionado-->
-            
             <select id="documentos">
               <?=$this->documentos?>
             </select>
+
             <h2 id="msgArchivo">Favor de seleccionar un sólo archivo</h2>
           </div>
           <div class="botonesModal col-xs-12 col-sm-12 col-md-12 col-lg-12">
             <div class="file-input-wrapper">
               <button class="btn-file-input" id="btnArch">Seleccionar archivo</button>
-              <input type="file" name="file" id="archivo" accept="application/pdf"onclick="subirDoc"/><!--Archivo-->
-              <button class="btn-file-input hidden" id="btnSubir">Subir Archivo</button>
-               <!-- va en e boton de arriba-->
+              <input type="file" name="file" id="archivo" accept="application/pdf"/><!--Archivo-->
+              <button class="btn-file-input hidden" id="btnSubir"  onclick="subirDoc()">Subir Archivo</button>
+               <!-- Va en el boton de arriba-->
             </div>
             <!-- <button type="button" name="button">Enviar</button> -->
           </div>
@@ -50,7 +50,6 @@
             <h2>Tu archivo ha sido enviado al administrador</h2>
           </div>
           <div class="botonesModal col-xs-12 col-sm-12 col-md-12 col-lg-12">
-
           </div>
         </div>
 
@@ -87,8 +86,8 @@
           <div class="nom">
             <p><?=$this->usuario['nombrePlan']?></p>
           </div>
-          <div class="nom" id="doc">
-            <p><?=$this->documentos?></p><!--Nombre del documento subido Verificar si es correcto-->
+          <div class="nom">
+            <p><?=$this->documentos?></p><!--Nombre del documento subido Verificar si es correcto dependera del nombre del documento que el usuario hay subido-->
           </div>
           <div class="nom" id="flechas">
             <i class="fas fa-cloud-upload-alt" id="sub" onclick="ok('ventanaSubir')"></i>

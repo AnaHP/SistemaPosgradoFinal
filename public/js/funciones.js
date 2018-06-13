@@ -56,3 +56,31 @@ document.getElementById("btnSubir").addEventListener("click",()=>{
   var btnSubir = document.getElementById("btnSubir");
   btnSubir.textContent = "Subiendo..."; 
 });
+
+function subirDoc(){
+  var formData = new FormData();
+  formData.append("file", document.querySelector('input').files[0]);
+  var request = new XMLHttpRequest();
+  request.open("POST","documentos.php");
+  request.send(formData);
+  request.onreadystatechange = function () {
+    if (this.readyState == 4 && this.status == 200){
+      console.log(this.responseText);
+      if (this.responseText == '1'){
+        alert("Documento subido correctamente");
+      } else {
+        console.log(this.responseText);
+      }
+    }
+  }
+}
+
+
+
+//document.getElementById("msgArchivo").addEventListener("change", ()=>{
+  //var doc = document.getElementById("documentos");
+  //var nomArc = document.getElementById("nomArc");
+  //console.log(doc);
+  //document.getElementById().textContent = doc.files[0].name;
+  //nomArc.classList.remove("hidden");
+//});

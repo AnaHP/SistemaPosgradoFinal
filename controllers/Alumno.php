@@ -21,7 +21,6 @@ class Alumno extends Controller{
           $idDocumento     = $columna['idDocumento'];
           $nombreDocumento = $columna['nombreDocumento'];
           $idPlan          = $columna['idPlan'];
-        
           $opcionDoc  .= "<option value='{$idDocumento}'>{$idDocumento} | {$nombreDocumento}</option>";
         }
         return $opcionDoc;
@@ -31,15 +30,15 @@ class Alumno extends Controller{
     }
 
     
-    public function getSubirDoc(){
-    }
+    public function getsubirDoc(){
+      
 
+
+    }
     public function getUsuario($expediente){
       $usuario = $this->model->getUsuario($expediente);
       return $usuario;
     }
-
-
   }
 ?>
 

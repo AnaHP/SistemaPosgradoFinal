@@ -213,7 +213,7 @@ function generarNotificacion(titulo, mensaje, boton, estado, prompt=null,fn=null
      return null;
  }
 
- // /***PONE UNA ALERTA DE CONFIMAR SOBRE SALIR DEL SITIO**/
+ // /***PONE UNA ALERTA DE CONFIRMAR SOBRE SALIR DEL SITIO**/
  // function confirmacion() {
  //  if(localStorage.getItem('conf') != '1'){
  //  	window.onbeforeunload = function (e) {
