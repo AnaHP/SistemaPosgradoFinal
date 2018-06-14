@@ -77,7 +77,8 @@
         </div>
       </div>
       <div class="datosA">
-        <h1>José Alejandro Vargas Diaz</h1>
+
+        <h1><?=$this->usuario['nombre']." ".$this->usuario['apellidoPat']." ".$this->usuario['apellidoMat']?><h1>
         <p>Administrador</p>
       </div>
       <div class="menu col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -90,16 +91,16 @@
       </div>
       <div class="menuCO" id="menuCO">
         <div class="opciones" id="opciones">
-          <p>Maestria en innovacion de entornos virtuales de enseñanza-aprendizaje</p>
+        Maestria en innovacion de entornos virtuales de enseñanza-aprendizaje
         </div>
         <div class="opciones" id="opciones">
-          <p>Maestría en ciencias de la computación</p>
+        Maestría en ciencias de la computación
         </div>
         <div class="opciones" id="opciones">
-          <p>Maestria en sistemas de informacion</p>
+        Maestria en sistemas de informacion
         </div>
-        <div class="opciones" id="opciones">
-          <p>Maestria en sistemas computacionales</p>
+        <div class="opciones" id="opciones" onclick = "">
+        Maestria en sistemas computacionales
         </div>
       </div>
     </div>

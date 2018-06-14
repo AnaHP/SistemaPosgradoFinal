@@ -6,6 +6,7 @@ class Admin extends Controller{
     }
 
     public function index(){
+      //$this->view->planposgrado = $this->getPlanes();
       $this->view->usuario = $this->getUsuario('256910');
       $this->view->render($this,'index');
     }
@@ -13,16 +14,6 @@ class Admin extends Controller{
     public function getUsuario($expediente){
       $usuario = $this->model->getUsuario($expediente);
       return $usuario;
-    }
-
-    private function alumnos()
-    {
-      $planes  = $this->model->planes();
-      $documentos = $this->model->documentos();
-      $this->view->planes = $planes;
-      $this->view->documentos = $documentos;
-      
-      $this->view->render($this,'admin');
     }
 
     private function getPlanes(){
@@ -39,6 +30,17 @@ class Admin extends Controller{
         return '<option>No hay Opciones</option>';
       }
     }
+
+  //  private function alumnos()
+   // {
+    //  $planes  = $this->model->planes();
+     // $documentos = $this->model->documentos();
+     // $this->view->planes = $planes;
+     // $this->view->documentos = $documentos;
+      
+     // $this->view->render($this,'admin');
+   // }
+
   }
   
  ?>
