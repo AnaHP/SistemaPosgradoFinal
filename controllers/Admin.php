@@ -6,7 +6,7 @@ class Admin extends Controller{
     }
 
     public function index(){
-      //$this->view->planposgrado = $this->getPlanes();
+      $this->view->planposgrado = $this->getPlanes();
       $this->view->usuario = $this->getUsuario('256910');
       $this->view->render($this,'index');
     }

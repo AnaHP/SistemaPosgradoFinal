@@ -25,7 +25,10 @@ function login(){
           });//Fin ajax
       }
 
-
+      function cambia(){
+        alert("cambia de pagina a la Maestria en computacion")
+        location.href="https://www.ecosia.org/?ref=icon-search"
+      }
       
 
 

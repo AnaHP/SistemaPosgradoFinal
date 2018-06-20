@@ -77,7 +77,6 @@
         </div>
       </div>
       <div class="datosA">
-
         <h1><?=$this->usuario['nombre']." ".$this->usuario['apellidoPat']." ".$this->usuario['apellidoMat']?><h1>
         <p>Administrador</p>
       </div>
@@ -90,7 +89,7 @@
         </div>
       </div>
       <div class="menuCO" id="menuCO">
-        <div class="opciones" id="opciones">
+        <div class="opciones" id="opciones" onclick="cambia()">
         Maestria en innovacion de entornos virtuales de enseñanza-aprendizaje
         </div>
         <div class="opciones" id="opciones">
@@ -99,7 +98,7 @@
         <div class="opciones" id="opciones">
         Maestria en sistemas de informacion
         </div>
-        <div class="opciones" id="opciones" onclick = "">
+        <div class="opciones" id="opciones">
         Maestria en sistemas computacionales
         </div>
       </div>
@@ -109,10 +108,10 @@
         <summary>
           <div class="alumnosN" id="alumnosN">
             <div class="nombreA col-xs-6 col-sm-6 col-md-6 col-lg-6">
-              <p>Sharol Rubí González Serrano</p>
+            <p><?=$this->usuario['nombre']." ".$this->usuario['apellidoPat']." ".$this->usuario['apellidoMat']?></p>
             </div>
             <div class="sem col-xs-4 col-sm-4 col-md-4 col-lg-4">
-              <p>4to semestre</p>
+              <p><?=$this->usuario['semestre']?></p>
             </div>
             <div class="flec col-xs-2 col-sm-2 col-md-2 col-lg-2">
               <i class="fas fa-angle-down" id="bop" ></i>

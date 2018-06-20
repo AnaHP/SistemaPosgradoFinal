@@ -29,12 +29,6 @@ class Alumno extends Controller{
       }
     }
 
-    
-    public function getsubirDoc(){
-      
-
-
-    }
     public function getUsuario($expediente){
       $usuario = $this->model->getUsuario($expediente);
       return $usuario;

@@ -25,7 +25,7 @@
               <?=$this->documentos?>
             </select>
 
-            <h2 id="msgArchivo">Favor de seleccionar un sólo archivo</h2>
+            <h2 id="msgArchivo">Seleccionar un solo archivo</h2>
           </div>
           <div class="botonesModal col-xs-12 col-sm-12 col-md-12 col-lg-12">
             <div class="file-input-wrapper">

@@ -57,6 +57,8 @@ document.getElementById("btnSubir").addEventListener("click",()=>{
   btnSubir.textContent = "Subiendo..."; 
 });
 
+
+
 function subirDoc(){
   var formData = new FormData();
   formData.append("file", document.querySelector('input').files[0]);

@@ -17,8 +17,6 @@ class Admin_model extends Model{
     {
       return $this->db->select('A.nombre, A.idPlan,A.apellidoPat, A.apellidoMat,A.semestre,P.nombrePlan','usuario A, planposgrado P', 'A.idPlan = P.idPlan'.' AND A.expediente='.$expediente);
     } 
-
-
   }
 
 ?>
